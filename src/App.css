@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 300vh;
+  overflow-x: hidden;
+}
+
+:root {
+  --white: #f2f7f2;
+  --pink: #8e5572;
+  --brown: #88665d;
+  --lightbrown: #bcaa99;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(/fonts/ofont.ru_Nunito.ttf);
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: url(/fonts/ofont.ru_Hero.ttf);
+}
+
+@font-face {
+  font-family: 'HeroR';
+  src: url(/fonts/ofont.ru_HeroRegular.ttf);
+}
