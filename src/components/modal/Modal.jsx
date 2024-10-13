@@ -26,6 +26,7 @@ const Modal = ({ active, setActive }) => {
         title: "Выполнено успешно",
         icon: "success",
       });
+      setActive(false);
     }
   };
 
