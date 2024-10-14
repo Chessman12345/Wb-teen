@@ -10,7 +10,7 @@
 
 .courses__container {
     padding: 0 80px;
-    height: 120vh;
+    height: 55vh;
 }
 
 .courses__container::before {
@@ -26,7 +26,21 @@
     border-bottom: 20vh solid var(--white);
 }
 
+.courses__container::after {
+    content: '';
+    position: absolute;
+    top: 55vh;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 0px solid transparent;
+    border-right: 1660px solid transparent;
+    border-left: 0 solid transparent;
+    border-top: 20vh solid var(--white);
+}
+
 .courses__title {
+    padding: 50px 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -35,4 +49,75 @@
 .courses__title h1 {
     font-family: 'Nunito';
     letter-spacing: 0.5px;
+}
+
+.courses__slider-container {
+    height: 30vh;
+}
+
+.courses__slider-cards-inner {
+    height: 200px;
+}
+
+.courses__slider-title-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses__slider-cards {
+    border-radius: 20px;
+    width: 450px;
+    height: 170px;
+    /* color: white; */
+    /* background-color: black; */
+
+}
+
+.courses__slider-title {
+    /* background-color: blue; */
+    font-family: 'Hero';
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    /* background-color: red; */
+}
+
+.courses__slider-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.courses__slider-title h3 {
+    padding: 0;
+    margin: -5px 0 0 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+
+.courses__slider-title h4 {
+    font-size: 14px;
+}
+
+.courses__slider-subtitle-part {
+    /* background-color: red; */
+    height: 90px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-family: 'Hero';
+    letter-spacing: 2px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.slick-prev::before {
+    display: none;
+}
+
+.slick-next:before {
+    color: black;
+    font-size: 36px;
+    position: absolute;
+    top: -20px;
+    left: -10px;
 }

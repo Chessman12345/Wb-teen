@@ -1,0 +1,36 @@
+.courses_cards-one {
+    background-color: lightblue;
+    color: black;
+}
+
+.courses_cards-two {
+    background-color: lightsalmon;
+    color: black;
+}
+
+.courses_cards-tree {
+    background-color: lightcoral;
+    color: black;
+}
+
+
+.courses_cards-four {
+    background-color: lightpink;
+    color: black;
+}
+
+
+.courses_cards-five {
+    background-color: lightgray;
+    color: black;
+}
+
+
+.courses_cards-six {
+    background-color: lightslategray;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
