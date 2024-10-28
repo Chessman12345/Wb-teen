@@ -1,0 +1,147 @@
+.news {
+	position: absolute;
+	top: 165vh;
+	right: 0;
+	left: 280px;
+	max-width: 1595px;
+	padding: 0 15px;
+	background-color: #9e6181;
+}
+
+.news__container {
+	padding: 0 80px;
+	height: 55vh;
+}
+
+.news__container::before {
+	content: "";
+	position: absolute;
+	top: -20vh;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-left: 1660px solid transparent;
+	border-right: 0 solid transparent;
+	border-bottom: 20vh solid #9e6181;
+}
+
+.news__container::after {
+	content: "";
+	position: absolute;
+	top: 55vh;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 0px solid transparent;
+	border-right: 1660px solid transparent;
+	border-left: 0 solid transparent;
+	border-top: 20vh solid #9e6181;
+}
+
+.news__title {
+	padding: 50px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.news__title h1 {
+	color: white;
+	font-family: "Nunito";
+	letter-spacing: 0.5px;
+}
+
+.news__slider-container {
+	padding: 0 0 0 30px;
+	width: 1400px;
+	/* background-color: red; */
+}
+
+.news__slider-cards-inner {
+	height: 230px;
+}
+
+.news__slider-cards {
+	width: 440px;
+	height: 200px;
+	border-radius: 20px;
+	background-color: white;
+}
+
+.news__slider-cards a {
+	text-decoration: none;
+}
+
+.news__slider-title-part {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.news__slider-title-part img {
+	width: 80px;
+}
+
+.news__slider-title-part {
+	height: 125px;
+}
+
+.news__slider-subtitle-part h1 {
+	height: 65px;
+	border-radius: 20px;
+	padding: 0;
+	margin: 0;
+	font-family: "Nunito";
+	display: flex;
+	justify-content: center;
+	padding: 10px 0px 0px 0px;
+	color: black;
+	transition: .3s;
+}
+
+.news__slider-subtitle-part-title h1:hover {
+	color: #0050ff;
+}
+
+.news__subtitle-link {
+	width: 97%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.news__subtitle-link a {
+	transition: 0.3s;
+	font-size: 12px;
+	font-family: "Hero";
+	text-decoration: none;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 550;
+}
+
+.news__subtitle-link a:hover {
+	color: lightblue;
+}
+
+.slick-next:before {
+	color: lightgrey;
+	font-size: 36px;
+	position: absolute;
+	top: -30px;
+	left: 0px;
+}
+
+.news__slider-container .slick-prev:before {
+	color: lightgrey;
+	font-size: 36px;
+	position: absolute;
+	top: -30px;
+	left: -45px;
+}
+
+.slick-dots {
+	position: absolute;
+	left: 485px;
+	width: 400px;
+}

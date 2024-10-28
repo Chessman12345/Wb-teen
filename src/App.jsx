@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 // import Courses from "./components/courses/Courses";
 import "./App.css";
 import Courses from "./components/courses/Сourses";
+import NewsNews from "./components/News/News";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <Header />
       <Courses />
+      <NewsNews />
     </>
   );
 }

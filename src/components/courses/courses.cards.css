@@ -1,21 +1,21 @@
 .courses_cards-one {
-    background-color: lightblue;
+    background-color: lightgray;
     color: black;
 }
 
 .courses_cards-two {
-    background-color: lightsalmon;
+    background-color: lightgray;
     color: black;
 }
 
 .courses_cards-tree {
-    background-color: lightcoral;
+    background-color: lightgray;
     color: black;
 }
 
 
 .courses_cards-four {
-    background-color: lightpink;
+    background-color: lightgray;
     color: black;
 }
 
@@ -27,10 +27,14 @@
 
 
 .courses_cards-six {
-    background-color: lightslategray;
+    background-color: lightcoral;
     color: white;
     font-size: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.courses_cards-six .courses__slider-subtitle-part {
+    display: none;
 }
