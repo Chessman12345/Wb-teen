@@ -1,18 +1,20 @@
 import { useState } from "react";
-import Nav from "./components/leftNav/Nav";
-import Header from "./components/header/Header";
-// import Courses from "./components/courses/Courses";
+import { Routes, Route } from "react-router-dom";
+import AboutPage from "./components/PathPage/AboutPage/AboutPage";
+import Homepage from "./components/HomePage/HomePage";
+import Nav from "./components/Nav/Nav";
 import "./App.css";
-import Courses from "./components/courses/Сourses";
-import NewsNews from "./components/News/News";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Header />
-      <Courses />
-      <NewsNews />
+      <Routes>
+        <Route path="/" element={<Nav />}>
+          <Route index element={<Homepage />} />
+          <Route path="home" element={<Homepage />} />
+          <Route path="company" element={<AboutPage />} />
+        </Route>
+      </Routes>
     </>
   );
 }

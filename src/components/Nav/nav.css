@@ -4,6 +4,7 @@
     width: 180px;
     position: fixed;
     background-color: white;
+    z-index: 2;
 }
 
 .nav__container {
