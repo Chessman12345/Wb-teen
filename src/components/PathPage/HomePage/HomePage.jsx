@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Header from "../header/Header";
-import Courses from "../courses/Сourses";
-import News from "../News/News";
+import Header from "../../header/Header";
+import Courses from "../../courses/Сourses";
+import News from "../../News/News";
 
 function HomePage() {
   return (

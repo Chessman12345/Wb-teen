@@ -47,7 +47,7 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav__item">
-                <Link to="/company" className="nav_link">
+                <Link to="/AboutTheCompany" className="nav_link">
                   О компании
                 </Link>
               </li>
