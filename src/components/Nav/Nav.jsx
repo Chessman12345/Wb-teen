@@ -9,7 +9,7 @@ const Nav = () => {
       <sidebar className="nav">
         <div className="nav__container">
           <div className="nav__logo">
-            <Link to="Nav.jsx">
+            <Link to="/logoHome">
               <img src={navLogo} alt="" />
             </Link>
           </div>

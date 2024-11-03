@@ -1,0 +1,149 @@
+.portfolio {
+    position: absolute;
+    top: 240vh;
+    right: 0;
+    left: 280px;
+    max-width: 1695px;
+    padding: 0 15px;
+    background-color: var(--white);
+}
+
+.portfolio__container {
+    padding: 0 80px;
+    height: 75vh;
+}
+
+.portfolio__container::before {
+    content: '';
+    position: absolute;
+    top: -19.9vh;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 1660px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 20vh solid var(--white);
+}
+
+.portfolio__container::after {
+    content: '';
+    position: absolute;
+    top: 75vh;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 0px solid transparent;
+    border-right: 1660px solid transparent;
+    border-left: 0 solid transparent;
+    border-top: 20vh solid var(--white);
+}
+
+.portfolio__title {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__title h1 {
+    font-family: 'Nunito';
+    letter-spacing: 0.5px;
+}
+
+.potfolio__slider-container {
+    padding: 0 0 0 30px;
+    width: 1400px;
+}
+
+.portfolio__slider-cards-inner {
+    height: 525px;
+}
+
+.portfolio__slider-cards {
+    border-radius: 20px;
+    width: 440px;
+    height: 500px;
+    background-color: white;
+}
+
+.portfolio__slider-title-part-image {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__slider-title-part-image img {
+    width: 441px;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+.portfolio__slider-cards-inner {
+    padding-left: 2px;
+}
+
+.portfolio__slider-subtitle-part-title {
+    width: 420px;
+    height: 50px;
+    padding: 10px 0 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio__slider-subtitle-part-title h2 {
+    font-family: 'Nunito';
+    letter-spacing: 0.5px;
+}
+
+.portfolio__slider-subtitle-part-title h2 a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio__slider-subtitle-part-title h2 a:hover {
+    color: #0050ff;
+}
+
+.portfolio__slider-subtitle-part-subtitle {
+    width: 405px;
+    height: 90px;
+    padding: 0px 15px 10px 20px;
+}
+
+.portfolio__slider-subtitle-part-subtitle p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.portfolio__slider-subtitle-part-gitlink {
+    width: 420px;
+    height: 45px;
+    padding: 10px 0 10px 20px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio__slider-subtitle-part-gitlink p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito';
+    letter-spacing: 0.5px;
+}
+
+.portfolio__slider-subtitle-part-gitlink p a {
+    padding: 0;
+    margin: 0;
+    transition: .3s;
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio__slider-subtitle-part-gitlink p a:hover {
+    color: #0050ff;
+}
