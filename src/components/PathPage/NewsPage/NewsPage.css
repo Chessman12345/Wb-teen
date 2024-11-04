@@ -6,7 +6,37 @@
     padding: 0;
     margin: 0;
     height: 100vh;
-    max-width: 1595px;
+    max-width: 1620px;
     padding: 0 15px;
-    background-color: lightpink;
+    background-color: var(--white);
+}
+
+.NawsPage__title {
+    font-family: "Nunito";
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+    /* background-color: red; */
+}
+
+.NewsPage__nav-wrapper {
+    padding: 20px;
+}
+
+.NewsPage__nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito";
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+
+li {
+    list-style-type: none;
 }

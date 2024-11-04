@@ -4,9 +4,15 @@ import "./PolicyLink.css";
 const PolicyLink = () => {
   return (
     <>
-      <section className="PolicyLink">
-        <h1>Ссылка с новостей</h1>
-      </section>
+      <div className="PolicyLink">
+        <div className="container">
+          <div className="PolicyLink__container">
+            <div className="PolicyLink__title">
+              <h1>Политика</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

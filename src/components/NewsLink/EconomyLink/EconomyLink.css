@@ -1,12 +1,22 @@
 .EconomyLink {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 280px;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    max-width: 1595px;
+    height: 75vh;
+    max-width: 1615px;
     padding: 0 15px;
     background-color: lightblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.EconomyLink__title {
+    font-family: "Nunito";
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
 }

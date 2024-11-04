@@ -4,9 +4,15 @@ import "./PosterLink.css";
 const PosterLink = () => {
   return (
     <>
-      <section className="PosterLink">
-        <h1>Ссылка с новостей</h1>
-      </section>
+      <div className="PosterLink">
+        <div className="container">
+          <div className="PosterLink__container">
+            <div className="PosterLink__title">
+              <h1>Афиша</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

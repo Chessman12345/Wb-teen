@@ -4,9 +4,15 @@ import "./EventLink.css";
 const EventLink = () => {
   return (
     <>
-      <section className="EventLink">
-        <h1>Ссылка с новостей</h1>
-      </section>
+      <div className="EventLink">
+        <div className="container">
+          <div className="EventLink__container">
+            <div className="EventLink__title">
+              <h1>Мероприятия</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

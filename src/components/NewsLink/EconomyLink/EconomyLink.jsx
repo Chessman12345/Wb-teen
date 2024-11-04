@@ -4,9 +4,15 @@ import "./EconomyLink.css";
 const EconomyLink = () => {
   return (
     <>
-      <section className="EconomyLink">
-        <h1>Ссылка с новостей</h1>
-      </section>
+      <div className="EconomyLink">
+        <div className="container">
+          <div className="EconomyLink__container">
+            <div className="EconomyLink__title">
+              <h1>Экономика</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

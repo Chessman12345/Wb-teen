@@ -4,9 +4,15 @@ import "./EntertainmentLink.css";
 const EntertainmentLink = () => {
   return (
     <>
-      <section className="EntertainmentLink">
-        <h1>Ссылка с новостей</h1>
-      </section>
+      <div className="EntertainmentLink">
+        <div className="container">
+          <div className="EntertainmentLink__container">
+            <div className="EntertainmentLink__title">
+              <h1>Развлечение</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

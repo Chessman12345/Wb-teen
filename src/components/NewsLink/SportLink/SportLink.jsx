@@ -4,9 +4,15 @@ import "./SportLink.css";
 const SportLink = () => {
   return (
     <>
-      <section className="SportLink">
-        <h1>Ссылка с новостей</h1>
-      </section>
+      <div className="SportLink">
+        <div className="container">
+          <div className="SportLink__container">
+            <div className="SportLink__title">
+              <h1>Спорт</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
