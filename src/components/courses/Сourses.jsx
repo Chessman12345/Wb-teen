@@ -2,14 +2,6 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Html from "../../../img/html.png";
-import Ux from "../../../img/UxUl.png";
-import Figma from "../../../img/figma.png";
-import React from "../../../img/react.png";
-import Angular from "../../../img/angular.png";
-import Vue from "../../../img/vue.png";
-import Frontend from "../../../img/frontend.png";
-import TypeScript from "../../../img/typescript.png";
 import "./courses.cards.css";
 import "./courses.css";
 
@@ -19,7 +11,6 @@ const Courses = () => {
       id: 1,
       text: "Курс",
       title: "Верстальщик",
-      image: Html,
       subtitle: "3мес.",
       class: "courses__slider-cards courses_cards-one",
     },
@@ -27,7 +18,6 @@ const Courses = () => {
       id: 2,
       text: "Курс",
       title: "Веб-дизайнер",
-      image: Figma,
       subtitle: "10мес.",
       class: "courses__slider-cards courses_cards-two",
     },
@@ -35,7 +25,6 @@ const Courses = () => {
       id: 3,
       text: "Курс",
       title: "React Developer",
-      image: React,
       subtitle: "18мес.",
       class: "courses__slider-cards courses_cards-tree",
     },
@@ -43,7 +32,6 @@ const Courses = () => {
       id: 4,
       text: "Курс",
       title: "Frontend Developer",
-      image: Frontend,
       subtitle: "9мес.",
       class: "courses__slider-cards courses_cards-four",
     },
@@ -51,7 +39,6 @@ const Courses = () => {
       id: 5,
       text: "Курс",
       title: "TypeScript Developer",
-      image: TypeScript,
       subtitle: "10мес.",
       class: "courses__slider-cards courses_cards-five",
     },

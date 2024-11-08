@@ -1,8 +1,15 @@
 .PosterLink {
-    height: 75vh;
+    height: 290vh;
     max-width: 1615px;
     padding: 0 15px;
-    background-color: lightblue;
+    /* background-color: var(--white); */
+    background-color: #fff;
+}
+
+.PosterLink__card-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 a {
@@ -19,4 +26,39 @@ li {
     display: flex;
     justify-content: center;
     padding: 20px 0 10px 0;
+}
+
+.PosterLink__cards {
+    padding: 10px;
+    font-family: 'Proxima';
+    display: flex;
+    width: 1200px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.PosterLink__cards-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.PosterLink__cards-joint {
+    display: flex;
+}
+
+.PosterLink__cards-image {
+    width: 400px;
+    height: 440px;
+}
+
+.PosterLink__cards-image img {
+    border-radius: 20px;
+    height: 400px;
+}
+
+span {
+    color: rgba(0, 0, 0, .48);
+    margin-right: 4px;
 }

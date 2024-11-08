@@ -26,3 +26,17 @@ body {
   font-family: 'HeroR';
   src: url(/fonts/ofont.ru_HeroRegular.ttf);
 }
+
+@font-face {
+  font-family: 'Giger';
+  src: url(/fonts/Giger.ttf);
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url(/fonts/ofont.ru_Proxima\ Nova.ttf);
+}
+
+li {
+  list-style-type: none;
+}

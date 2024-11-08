@@ -1,60 +1,50 @@
 import { useState } from "react";
 import navLogo from "../../../img/Group 10.svg";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./nav.css";
 
 const Nav = () => {
+  const OnClick = (e) => {
+    e.classList.toggle("active");
+  };
+
   return (
     <>
-      <sidebar className="nav">
+      <nav className="nav">
         <div className="nav__container">
           <div className="nav__logo">
-            <Link to="/logoHome">
+            <NavLink to="/logoHome">
               <img src={navLogo} alt="" />
-            </Link>
+            </NavLink>
           </div>
           <div className="navBar">
             <ul className="nav__list">
-              <li className="nav__item">
-                <Link to="/home" className="nav_link">
-                  Главная страница
-                </Link>
+              <li onClick={OnClick}>
+                <NavLink to="/home">Главная страница</NavLink>
               </li>
-              <li className="nav__item">
-                <Link to="/news" className="nav_link">
-                  Новости
-                </Link>
+              <li onClick={OnClick}>
+                <NavLink to="/news">Новости</NavLink>
               </li>
-              <li className="nav__item">
-                <Link to="/portfolio" className="nav_link">
-                  Портфолио
-                </Link>
+              <li onClick={OnClick}>
+                <NavLink to="/courses">Курсы</NavLink>
+              </li>
+              <li onClick={OnClick}>
+                <NavLink to="/portfolio">Портфолио</NavLink>
               </li>
 
-              <li className="nav__item">
-                <Link to="/contacts" className="nav_link">
-                  Контакты
-                </Link>
+              <li onClick={OnClick}>
+                <NavLink to="/contacts">Контакты</NavLink>
               </li>
-              <li className="nav__item">
-                <Link to="/joinUs" className="nav_link">
-                  Присоедениться к нам
-                </Link>
+              <li onClick={OnClick}>
+                <NavLink to="/joinUs">Присоедениться к нам</NavLink>
               </li>
-              <li className="nav__item">
-                <Link to="/courses" className="nav_link">
-                  Курсы
-                </Link>
-              </li>
-              <li className="nav__item">
-                <Link to="/AboutTheCompany" className="nav_link">
-                  О компании
-                </Link>
+              <li onClick={OnClick}>
+                <NavLink to="/AboutTheCompany">О компании</NavLink>
               </li>
             </ul>
           </div>
         </div>
-      </sidebar>
+      </nav>
       <main>
         <Outlet />
       </main>

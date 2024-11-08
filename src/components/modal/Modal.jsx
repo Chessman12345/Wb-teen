@@ -33,7 +33,7 @@ const Modal = ({ active, setActive }) => {
   return (
     <>
       <div
-        className={active ? "modal active" : "modal"}
+        className={active ? "modal activeT" : "modal"}
         onClick={() => setActive(false)}
       >
         <form

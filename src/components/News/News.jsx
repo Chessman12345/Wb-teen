@@ -93,7 +93,10 @@ const News = () => {
                         </div>
                         <div className="news__slider-subtitle-part">
                           <div className="news__slider-subtitle-part-title">
-                            <Link to={item.path}>
+                            <Link
+                              className="news__slider-subtitle-part-title-link"
+                              to={item.path}
+                            >
                               <h1>{item.title}</h1>
                             </Link>
                           </div>

@@ -7,8 +7,6 @@
     margin: 0;
     height: 100vh;
     max-width: 1620px;
-    padding: 0 15px;
-    background-color: var(--white);
 }
 
 .NawsPage__title {
@@ -24,19 +22,33 @@
 }
 
 .NewsPage__nav {
+    background-color: rgba(0, 0, 0, .04);
     display: flex;
     justify-content: space-between;
     font-family: "Nunito";
     padding: 30px;
     border-radius: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 a {
     text-decoration: none;
+    transition: .3s;
     /* color: black; */
+}
+
+a:hover {
+    color: #0050ff;
 }
 
 li {
     list-style-type: none;
+}
+
+.link__active {
+    color: red;
+}
+
+.active {
+    color: #0050ff;
 }

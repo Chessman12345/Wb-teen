@@ -3,6 +3,10 @@ import "./NewsPage.css";
 import { NavLink, Outlet } from "react-router-dom";
 
 const LayoutNewsPage = () => {
+  const OnClick = (e) => {
+    e.classList.toggle("active");
+  };
+
   return (
     <>
       <section className="NewsPage">
@@ -14,13 +18,27 @@ const LayoutNewsPage = () => {
           </div>
           <div className="NewsPage__nav-wrapper">
             <nav className="NewsPage__nav">
-              <NavLink to="/news">Все</NavLink>
-              <NavLink to="/NewsSport">Спорт</NavLink>
-              <NavLink to="/NewsEntertainment">Развлечение</NavLink>
-              <NavLink to="/NewsPoster">Афиша</NavLink>
-              <NavLink to="/NewsPolicy">Политика</NavLink>
-              <NavLink to="/NewsEvent">Мероприятия</NavLink>
-              <NavLink to="/NewsEconomy">Экономика</NavLink>
+              <li onClick={OnClick}>
+                <NavLink to="/news">Все</NavLink>
+              </li>
+              <li onClick={OnClick}>
+                <NavLink to="/NewsSport">Спорт</NavLink>
+              </li>
+              <li onClick={OnClick}>
+                <NavLink to="/NewsEntertainment">Развлечение</NavLink>
+              </li>
+              <li onClick={OnClick}>
+                <NavLink to="/NewsPoster">Афиша</NavLink>
+              </li>
+              <li onClick={OnClick}>
+                <NavLink to="/NewsPolicy">Политика</NavLink>
+              </li>
+              <li onClick={OnClick}>
+                <NavLink to="/NewsEvent">Мероприятия</NavLink>
+              </li>
+              <li onClick={OnClick}>
+                <NavLink to="/NewsEconomy">Экономика</NavLink>
+              </li>
             </nav>
           </div>
           <main>
