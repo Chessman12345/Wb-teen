@@ -1,4 +1,5 @@
 .Blocks__title {
+    padding: 40px;
     text-align: center;
     font-family: 'Nunito';
 }
@@ -12,23 +13,26 @@
 }
 
 .Block__row {
-    width: 1600px;
+    width: 1620px;
     display: flex;
     justify-content: space-around;
+
 }
 
 .block {
     border-radius: 20px;
-    width: 690px;
+    width: 640px;
     height: 500px;
     padding: 30px;
-    background-color: rgba(0, 0, 0, .04);
+    background-color: rgba(0, 0, 0, .02);
     font-family: 'Nunito';
 }
 
 .block__content {
     height: 478px;
-    background-color: red;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
 }
 
 .Block__row-posters {
@@ -63,4 +67,74 @@ h2 {
 .Block__poster-content {
     height: 470px;
     background-color: lightblue;
+}
+
+.block__card {
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .04);
+}
+
+
+.Links__image {
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Sport__cards-text {
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+}
+
+.Links-title h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.Links-timedate p {
+    padding: 0;
+    margin: 0;
+}
+
+.Links-text p {
+    font-family: 'Proxima';
+    padding: 0;
+    margin: 0;
+}
+
+.Links-timedate {
+    padding: 0px 0px 0px 21px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-family: "Nunito";
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: lightgray;
+    border-radius: 0 0 20px 20px;
+}
+
+.Links-title {
+    font-family: "Nunito";
+    font-size: 14px;
+    padding: 0px 5px 0px 18px;
+    display: flex;
+    align-items: flex-end;
+    width: 93%;
+    height: 50px;
+}
+
+.Links-text {
+    letter-spacing: 0.2px;
+    padding: 10px 25px 0px 21px;
+    display: flex;
+    width: 87%;
+    height: 165px;
+    font-size: 15px;
 }
