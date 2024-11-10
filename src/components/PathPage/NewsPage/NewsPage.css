@@ -5,8 +5,8 @@
     left: 280px;
     padding: 0;
     margin: 0;
-    height: 100vh;
     max-width: 1620px;
+    padding: 40px 15px;
 }
 
 .NawsPage__title {
@@ -43,10 +43,6 @@ a:hover {
 
 li {
     list-style-type: none;
-}
-
-.link__active {
-    color: red;
 }
 
 .active {

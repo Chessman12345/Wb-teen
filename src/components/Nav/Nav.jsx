@@ -5,7 +5,11 @@ import "./nav.css";
 
 const Nav = () => {
   const OnClick = (e) => {
-    e.classList.toggle("active");
+    let links = document.querySelectorAll(".link__active");
+    if (e.target.classList.contains("link__active")) {
+      links.forEach((item) => item.classList.remove("active"));
+      e.target.classList.add("active");
+    }
   };
 
   return (
@@ -18,28 +22,42 @@ const Nav = () => {
             </NavLink>
           </div>
           <div className="navBar">
-            <ul className="nav__list">
-              <li onClick={OnClick}>
-                <NavLink to="/home">Главная страница</NavLink>
+            <ul className="nav__list" onClick={OnClick}>
+              <li>
+                <NavLink to="/home" className="link__active">
+                  Главная страница
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/news">Новости</NavLink>
+              <li>
+                <NavLink to="/Links" className="link__active">
+                  Новости
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/courses">Курсы</NavLink>
+              <li>
+                <NavLink to="/courses" className="link__active">
+                  Курсы
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/portfolio">Портфолио</NavLink>
+              <li>
+                <NavLink to="/portfolio" className="link__active">
+                  Портфолио
+                </NavLink>
               </li>
 
-              <li onClick={OnClick}>
-                <NavLink to="/contacts">Контакты</NavLink>
+              <li>
+                <NavLink to="/contacts" className="link__active">
+                  Контакты
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/joinUs" className="link__active">
+                  Присоедениться к нам
+                </NavLink>
               </li>
               <li onClick={OnClick}>
-                <NavLink to="/joinUs">Присоедениться к нам</NavLink>
-              </li>
-              <li onClick={OnClick}>
-                <NavLink to="/AboutTheCompany">О компании</NavLink>
+                <NavLink to="/AboutTheCompany" className="link__active">
+                  О компании
+                </NavLink>
               </li>
             </ul>
           </div>

@@ -4,7 +4,11 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const LayoutNewsPage = () => {
   const OnClick = (e) => {
-    e.classList.toggle("active");
+    let links = document.querySelectorAll(".NewsPage__link-active");
+    if (e.target.classList.contains("NewsPage__link-active")) {
+      links.forEach((item) => item.classList.remove("active"));
+      e.target.classList.add("active");
+    }
   };
 
   return (
@@ -17,27 +21,51 @@ const LayoutNewsPage = () => {
             </div>
           </div>
           <div className="NewsPage__nav-wrapper">
-            <nav className="NewsPage__nav">
-              <li onClick={OnClick}>
-                <NavLink to="/news">Все</NavLink>
+            <nav className="NewsPage__nav" onClick={OnClick}>
+              <li>
+                <NavLink to="/Links" className="NewsPage__link-active">
+                  Все
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/NewsSport">Спорт</NavLink>
+              <li>
+                <NavLink
+                  to="/Links/NewsSport"
+                  className="NewsPage__link-active"
+                >
+                  Спорт
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/NewsEntertainment">Развлечение</NavLink>
+              <li>
+                <NavLink
+                  to="/Links/NewsEntertainment"
+                  className="NewsPage__link-active"
+                >
+                  Развлечение
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/NewsPoster">Афиша</NavLink>
+              <li>
+                <NavLink
+                  to="/Links/NewsPoster"
+                  className="NewsPage__link-active"
+                >
+                  Афиша
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/NewsPolicy">Политика</NavLink>
+              <li>
+                <NavLink
+                  to="/Links/NewsPolicy"
+                  className="NewsPage__link-active"
+                >
+                  Политика
+                </NavLink>
               </li>
-              <li onClick={OnClick}>
-                <NavLink to="/NewsEvent">Мероприятия</NavLink>
-              </li>
-              <li onClick={OnClick}>
-                <NavLink to="/NewsEconomy">Экономика</NavLink>
+              <li>
+                <NavLink
+                  to="/Links/NewsEconomy"
+                  className="NewsPage__link-active"
+                >
+                  Экономика
+                </NavLink>
               </li>
             </nav>
           </div>

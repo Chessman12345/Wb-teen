@@ -1,0 +1,66 @@
+.Blocks__title {
+    text-align: center;
+    font-family: 'Nunito';
+}
+
+.Blocks__wrapper {
+    width: 1600px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.Block__row {
+    width: 1600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.block {
+    border-radius: 20px;
+    width: 690px;
+    height: 500px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .04);
+    font-family: 'Nunito';
+}
+
+.block__content {
+    height: 478px;
+    background-color: red;
+}
+
+.Block__row-posters {
+    width: 100%;
+    height: 600px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.Block__row-posters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Block__poster {
+    padding: 30px;
+    font-family: 'Proxima';
+    width: 1200px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.Block__poster-title {
+    background-color: red;
+}
+
+.Block__poster-content {
+    height: 470px;
+    background-color: lightblue;
+}

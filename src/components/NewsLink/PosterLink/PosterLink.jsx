@@ -105,7 +105,7 @@ const PosterLink = () => {
               <div className="PosterLink__card-wrapper">
                 {dataone.map((item, index) => (
                   <div key={index} className="PosterLink__cards">
-                    <div className="PosterLink__cards-image card__image">
+                    <div className="PosterLink__cards-image Postercard__image">
                       <img src={item.imageone} alt="" />
                     </div>
                     <div className="PosterLink__cards-text">
@@ -214,7 +214,7 @@ const PosterLink = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="PosterLink__cards-image card__image">
+                    <div className="PosterLink__cards-image Postercard__image">
                       <img src={item.imageone} alt="" />
                     </div>
                   </div>
@@ -223,7 +223,7 @@ const PosterLink = () => {
               <div className="PosterLink__card-wrapper">
                 {datatree.map((item, index) => (
                   <div key={index} className="PosterLink__cards">
-                    <div className="PosterLink__cards-image card__image">
+                    <div className="PosterLink__cards-image Postercard__image">
                       <img src={item.imageone} alt="" />
                     </div>
                     <div className="PosterLink__cards-text">
@@ -332,7 +332,7 @@ const PosterLink = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="PosterLink__cards-image card__image">
+                    <div className="PosterLink__cards-image Postercard__image">
                       <img src={item.imageone} alt="" />
                     </div>
                   </div>
@@ -344,7 +344,7 @@ const PosterLink = () => {
                     key={index}
                     className="PosterLink__cards PosterLink__cards"
                   >
-                    <div className="PosterLink__cards-image card__image">
+                    <div className="PosterLink__cards-image Postercard__image">
                       <img src={item.imageone} alt="" />
                     </div>
                     <div className="PosterLink__cards-text">
@@ -456,7 +456,7 @@ const PosterLink = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="PosterLink__cards-image card__image">
+                    <div className="PosterLink__cards-image Postercard__image">
                       <img src={item.imageone} alt="" />
                     </div>
                   </div>

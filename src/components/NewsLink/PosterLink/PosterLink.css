@@ -51,9 +51,13 @@ li {
 .PosterLink__cards-image {
     width: 400px;
     height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .PosterLink__cards-image img {
+
     border-radius: 20px;
     height: 400px;
 }

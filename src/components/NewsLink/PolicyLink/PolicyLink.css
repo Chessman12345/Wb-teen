@@ -1,13 +1,11 @@
 .PolicyLink {
-    height: 75vh;
+    height: 110vh;
     max-width: 1615px;
     padding: 0 15px;
-    background-color: lightblue;
 }
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 li {
@@ -19,4 +17,95 @@ li {
     display: flex;
     justify-content: center;
     padding: 20px 0 10px 0;
+}
+
+.PolicyLink__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.PolicyLink__card-wrapperone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.PolicyLink__card-wrappertwo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.PolicyLink__cards {
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.card__image {
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.PolicyLink__cards-text {
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-title {
+    font-family: "Nunito";
+    font-size: 14px;
+    padding: 0px 5px 0px 18px;
+    display: flex;
+    align-items: flex-end;
+    width: 93%;
+    height: 50px;
+}
+
+.card-title h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.card-timedate {
+    padding: 0px 0px 0px 21px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-family: "Nunito";
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: lightgray;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-timedate p {
+    padding: 0;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    padding: 10px 25px 0px 21px;
+    display: flex;
+    width: 87%;
+    height: 165px;
+}
+
+.card-text p {
+    font-family: 'Proxima';
+    padding: 0;
+    margin: 0;
 }
