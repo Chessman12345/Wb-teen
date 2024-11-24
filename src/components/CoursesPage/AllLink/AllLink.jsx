@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ReactIcon from "../../../../img/ReactIcon.png";
 import FrontendIcom from "../../../../img/FrontEnd.png";
 import TildaIMage from "../../../../img/Tilda.png";

@@ -53,9 +53,12 @@ function App() {
             <Route path="Courses" element={<AllLinkCoursesPage />} />
             <Route
               path="Courses/WebDevelopment"
+              element={<WebDevCoursesPage />}
+            />
+            <Route
+              path="Courses/WebDesign"
               element={<WebDesignCoursesPage />}
             />
-            <Route path="Courses/WebDesign" element={<WebDevCoursesPage />} />
           </Route>
         </Route>
       </Routes>
