@@ -5,8 +5,41 @@
     left: 280px;
     padding: 0;
     margin: 0;
+    max-width: 1620px;
+    padding: 40px 15px;
     height: 100vh;
-    max-width: 1595px;
-    padding: 0 15px;
-    background-color: lightskyblue;
+}
+
+.CoursesPage__title {
+    width: 100%;
+    font-family: "Nunito";
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+}
+
+.CoursesPage__nav-wrapper {
+    padding: 20px;
+}
+
+.CoursesPage__nav {
+    background-color: rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito";
+    padding: 30px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0050ff;
+}
+
+.active {
+    color: #0050ff;
 }

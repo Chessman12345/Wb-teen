@@ -16,7 +16,7 @@ const Header = () => {
             </h2>
             <p>Главная ценность компании - наши ученики</p>
             <button onClick={() => setModalActive(true)}>
-              Присоедениться к нам
+              <span className="span"> Присоедениться к нам </span>
             </button>
           </div>
           <Modal active={modalActive} setActive={setModalActive} />

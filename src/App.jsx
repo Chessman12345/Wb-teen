@@ -13,6 +13,9 @@ import PolicyLink from "./components/NewsLink/PolicyLink/PolicyLink";
 import EconomyLink from "./components/NewsLink/EconomyLink/EconomyLink";
 import Links from "./components/NewsLink/Links/Links";
 import LayoutNewsPage from "./components/PathPage/NewsPage/LayoutNewsPage";
+import AllLinkCoursesPage from "./components/CoursesPage/AllLink/AllLink";
+import WebDesignCoursesPage from "./components/CoursesPage/WebDesign/WebDesign";
+import WebDevCoursesPage from "./components/CoursesPage/WebDev/WebDev";
 import Nav from "./components/Nav/Nav";
 import "./App.css";
 
@@ -27,7 +30,6 @@ function App() {
           <Route path="portfolio" element={<PortfoiloPage />} />
           <Route path="contacts" element={<ContactsPage />} />
           <Route path="joinUs" element={<JoinUs />} />
-          <Route path="courses" element={<CoursesPage />} />
           <Route path="AboutTheCompany" element={<AboutPage />} />
           <Route path="sport" element={<SportLink />} />
           <Route path="entertainment" element={<EntertainmentLink />} />
@@ -45,6 +47,15 @@ function App() {
             <Route path="Links/NewsPoster" element={<PosterLink />} />
             <Route path="Links/NewsPolicy" element={<PolicyLink />} />
             <Route path="Links/NewsEconomy" element={<EconomyLink />} />
+          </Route>
+          <Route path="/" element={<CoursesPage />}>
+            <Route index element={<CoursesPage />} />
+            <Route path="Courses" element={<AllLinkCoursesPage />} />
+            <Route
+              path="Courses/WebDevelopment"
+              element={<WebDesignCoursesPage />}
+            />
+            <Route path="Courses/WebDesign" element={<WebDevCoursesPage />} />
           </Route>
         </Route>
       </Routes>

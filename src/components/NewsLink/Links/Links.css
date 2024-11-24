@@ -1,7 +1,7 @@
 .Blocks__title {
     padding: 40px;
     text-align: center;
-    font-family: 'Nunito';
+    font-family: "Nunito";
 }
 
 .Blocks__wrapper {
@@ -16,7 +16,6 @@
     width: 1620px;
     display: flex;
     justify-content: space-around;
-
 }
 
 .block {
@@ -24,8 +23,8 @@
     width: 640px;
     height: 500px;
     padding: 30px;
-    background-color: rgba(0, 0, 0, .02);
-    font-family: 'Nunito';
+    background-color: rgba(0, 0, 0, 0.03);
+    font-family: "Nunito";
 }
 
 .block__content {
@@ -53,29 +52,26 @@ h2 {
 
 .Block__poster {
     padding: 30px;
-    font-family: 'Proxima';
+    font-family: "Proxima";
     width: 1200px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, .04);
-}
-
-.Block__poster-title {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
 .Block__poster-content {
-    height: 470px;
-    background-color: lightblue;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .block__card {
     border-radius: 20px;
     width: 350px;
     height: 400px;
-    background-color: rgba(0, 0, 0, .04);
+    background-color: rgba(0, 0, 0, 0.04);
 }
-
 
 .Links__image {
     border-radius: 20px 20px 0 0;
@@ -102,7 +98,7 @@ h2 {
 }
 
 .Links-text p {
-    font-family: 'Proxima';
+    font-family: "Proxima";
     padding: 0;
     margin: 0;
 }
@@ -137,4 +133,50 @@ h2 {
     width: 87%;
     height: 165px;
     font-size: 15px;
+}
+
+.Poster__cards {
+    padding: 10px;
+    font-family: "Proxima";
+    display: flex;
+    width: 1200px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.Poster__cards-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.Poster__cards-joint {
+    display: flex;
+}
+
+.Poster__cards-image {
+    width: 400px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Poster__cards-image img {
+    border-radius: 20px;
+    height: 400px;
+}
+
+span {
+    color: rgba(0, 0, 0, 0.48);
+    margin-right: 4px;
+}
+
+.block__title a {
+    font-size: 22px;
+}
+
+.Block__poster-title a {
+    font-size: 22px;
 }

@@ -4,6 +4,7 @@ import HungaryImage from "../../../../img/Hungary.png";
 import VenomImage from "../../../../img/Venom.jpg";
 import ZooImage from "../../../../img/Zoo.png";
 import RunPersonImage from "../../../../img/RunPerson.png";
+import { Link } from "react-router-dom";
 import "./Links.css";
 
 const Links = () => {
@@ -68,7 +69,7 @@ const Links = () => {
           <div className="Block__row">
             <div className="block">
               <div className="block__title">
-                <h2>Спорт</h2>
+                <Link to="/Links/NewsSport">Спорт</Link>
               </div>
               <div className="block__content">
                 {dataSport.map((item, index) => (
@@ -93,7 +94,7 @@ const Links = () => {
             </div>
             <div className="block">
               <div className="block__title">
-                <h2>Развлечение</h2>
+                <Link to="/Links/NewsEntertainment">Развлечение</Link>
               </div>
               <div className="block__content">
                 {dataIntertainment.map((item, index) => (
@@ -120,7 +121,7 @@ const Links = () => {
           <div className="Block__row">
             <div className="block">
               <div className="block__title">
-                <h2>Экономика</h2>
+                <Link to="/Links/NewsEconomy">Экономика</Link>
               </div>
               <div className="block__content">
                 {dataEconomy.map((item, index) => (
@@ -145,7 +146,7 @@ const Links = () => {
             </div>
             <div className="block">
               <div className="block__title">
-                <h2>Политика</h2>
+                <Link to="/Links/NewsPolicy">Политика</Link>
               </div>
               <div className="block__content">
                 {dataPolicy.map((item, index) => (
@@ -172,9 +173,67 @@ const Links = () => {
           <div className="Block__row-posters">
             <div className="Block__poster">
               <div className="Block__poster-title">
-                <h2>Афиша</h2>
+                <Link to="Links/NewsPoster">Афиша</Link>
               </div>
-              <div className="Block__poster-content"></div>
+              <div className="Block__poster-content">
+                {dataPoster.map((item, index) => (
+                  <div key={index} className="Poster__cards">
+                    <div className="Poster__cards-image Postercard__image">
+                      <img src={item.imageone} alt="" />
+                    </div>
+                    <div className="Poster__cards-text">
+                      <div className="Poster__cards-joint card-name">
+                        <p>
+                          <span>Оригинальное название: </span>
+                          {item.Name}
+                        </p>
+                      </div>
+                      <div className="Poster__cards-joint card-Country">
+                        <p>
+                          <span>Страна: </span>
+                          {item.Country}
+                        </p>
+                      </div>
+                      <div className="Poster__cards-joint card-Year">
+                        <p>
+                          <span>Год: </span>
+                          {item.Year}
+                        </p>
+                      </div>
+                      <div className="Poster__cards-joint card-Directors">
+                        <p>
+                          <span>Режиссеры: </span>
+                          {item.Directors}
+                        </p>
+                      </div>
+                      <div className="Poster__cards-joint card-Cast">
+                        <p>
+                          <span>В ролях: </span>
+                          {item.Cast}
+                        </p>
+                      </div>
+                      <div className="Poster__cards-joint card-PremiereDate">
+                        <p>
+                          <span>Дата премьеры: </span>
+                          {item.PremiereDate}
+                        </p>
+                      </div>
+                      <div className="Poster__cards-joint card-AgeLimit">
+                        <p>
+                          <span>Возрастное ограничение: </span>
+                          {item.AgeLimit}
+                        </p>
+                      </div>
+                      <div className="Poster__cards-joint card-Genre">
+                        <p>
+                          <span>Жанр: </span>
+                          {item.Genre}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
