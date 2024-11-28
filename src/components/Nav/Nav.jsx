@@ -49,11 +49,6 @@ const Nav = () => {
                   Контакты
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/joinUs" className="link__active">
-                  Присоедениться к нам
-                </NavLink>
-              </li>
               <li onClick={OnClick}>
                 <NavLink to="/AboutTheCompany" className="link__active">
                   О компании

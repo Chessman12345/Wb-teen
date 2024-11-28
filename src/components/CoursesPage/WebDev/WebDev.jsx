@@ -1,6 +1,10 @@
 import React from "react";
 import ReactIcon from "../../../../img/ReactIcon.png";
 import FrontendIcom from "../../../../img/FrontEnd.png";
+import VueIcon from "../../../../img/Vue.png";
+import AngularIcon from "../../../../img/Angular.png";
+import NextJsIcon from "../../../../img/NextJs.png";
+import TypeScriptIcon from "../../../../img/TypeScript.jpg";
 import "./WebDev.css";
 
 const WebDev = () => {
@@ -35,13 +39,54 @@ const WebDev = () => {
       id: 3,
       title: "Курс",
       subtitle: "Frontend Vue Developer",
-      image: ReactIcon,
+      image: VueIcon,
       textListOne: "Помощь в трудоустройстве",
       textListTwo: "Длительность курса 14 месяцев",
       class: "Webdev__cards Webdev__cards-tree",
       price: "1890",
       discount: "3780",
       permonth: "135",
+    },
+  ];
+
+  const datatwo = [
+    {
+      id: 1,
+      title: "Курс",
+      subtitle: "Frontend Angular Developer",
+      image: AngularIcon,
+      textListOne: "Помощь в трудоустройстве",
+      textListTwo: "Длительность курса 12 месяцев",
+      buttonTextOne: "",
+      buttonTextTwo: "",
+      class: "Webdev__cards Webdev__cards-four",
+      price: "1704",
+      discount: "3408",
+      permonth: "142",
+    },
+    {
+      id: 2,
+      title: "Курс",
+      subtitle: "Frontend TypeScript Developer",
+      image: TypeScriptIcon,
+      textListOne: "Помощь в трудоустройстве",
+      textListTwo: "Длительность курса 15 месяцев",
+      class: "Webdev__cards Webdev__cards-five",
+      price: "2 640",
+      discount: "5 280",
+      permonth: "176",
+    },
+    {
+      id: 3,
+      title: "Курс",
+      subtitle: "Frontend Next.js Developer",
+      image: NextJsIcon,
+      textListOne: "Помощь в трудоустройстве",
+      textListTwo: "Длительность курса 19 месяцев",
+      class: "Webdev__cards Webdev__cards-six",
+      price: "3 724",
+      discount: "7 448",
+      permonth: "196",
     },
   ];
 
@@ -102,7 +147,7 @@ const WebDev = () => {
                 ))}
               </div>
               <div className="Webdev__cards-wrapper">
-                {dataone.map((item, index) => (
+                {datatwo.map((item, index) => (
                   <div key={index} className={item.class}>
                     <div className="Webdev__title-part">
                       <div className="Webdev__title-part-text">

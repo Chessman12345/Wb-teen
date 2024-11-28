@@ -1,0 +1,253 @@
+.WebDes {
+    height: 180vh;
+    max-width: 1615px;
+    padding: 0 30px 0 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.WebDes__title {
+    font-family: "Proxima";
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.WebDes__cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.WebDes__cards-one {
+    /* background-color: #d7d2ce; */
+    /* background-color: #d6d4f0; */
+    background-color: #b5d2d6;
+}
+
+.WebDes__cards-two {
+    background-color: #d6d4f0;
+    /* background-color: #d7d2ce; */
+}
+
+.WebDes__cards-tree {
+    background-color: #ffe9a0;
+}
+
+.WebDes__cards {
+    width: 450px;
+    height: 480px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.WebDes__title-part {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* background-color: red; */
+}
+
+.WebDes__subtitle-part {
+    height: 370px;
+    width: 100%;
+}
+
+.WebDes__title-part-text {
+    width: 300px;
+    height: 130px;
+}
+
+.WebDes__title-part-image {
+    width: 150px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WebDes__title-part-image img {
+    width: 130px;
+}
+
+.WebDes__cards-wrapper-title {
+    padding: 30px;
+}
+
+.WebDes__cards-wrapper-title h1 {
+    font-family: "Nunito";
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+.WebDes__design-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.WebDes__card-wrapper {
+    width: 1100px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    padding: 0 0 40px 0;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.WebDes__title-part-title p {
+    font-family: "HeroR";
+    font-size: 13px;
+}
+
+.WebDes__title-part-subtitle h3 {
+    font-family: "Nunito";
+    font-size: 26px;
+}
+
+.WebDes__subtitle-part-list {
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.WebDes__subtitle-part-list ul li {
+    font-family: "Proxima";
+    letter-spacing: 0.4px;
+    list-style-type: disc;
+    font-size: 15px;
+}
+
+.WebDes__subtitle-part-price {
+    padding: 10px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.WebDes__subtitle-part-price-discount {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 65px;
+    position: relative;
+}
+
+.WebDes__subtitle-part-price-discount::after {
+    position: absolute;
+    content: "-50%";
+    top: 0;
+    right: 0;
+    border-radius: 50px;
+    background-color: rgb(255, 238, 0);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Proxima";
+    font-size: 14px;
+}
+
+.WebDes__subtitle-part-price-discount p {
+    padding: 0;
+    margin: 0;
+    font-family: "Proxima";
+}
+
+.WebDes__subtitle-part-price-discount p span {
+    color: inherit;
+    text-decoration: line-through;
+}
+
+.WebDes__subtitle-part-price-permonth {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    gap: 5px;
+}
+
+.WebDes__subtitle-part-price-permonth h1 {
+    font-family: "Patsy";
+    font-size: 40px;
+    width: 67px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+.WebDes__subtitle-part-price-permonth h4 {
+    font-family: "Proxima";
+    width: 67px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+.WebDes__subtitle-part-price-payment p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Proxima";
+}
+
+.WebDes__subtitle-part-button {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 15px;
+}
+
+.WebDes__subtitle-part-button button {
+    display: block;
+    position: relative;
+    background-color: slateblue;
+    letter-spacing: 1.5px;
+    padding: 15px 0;
+    width: 50%;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.WebDes__subtitle-part-button button span {
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.WebDes__subtitle-part-button button::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 0px;
+    background-color: lightcoral;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.WebDes__subtitle-part-button button:hover::after {
+    width: 210px;
+}

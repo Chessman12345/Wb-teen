@@ -22,15 +22,30 @@
 }
 
 .Webdev__cards-one {
-    background-color: rgb(63, 204, 197);
+    /* background-color: #d7d2ce; */
+    /* background-color: #d6d4f0; */
+    background-color: #b5d2d6;
 }
 
 .Webdev__cards-two {
-    background-color: rgb(253, 212, 195);
+    background-color: #d6d4f0;
+    /* background-color: #d7d2ce; */
 }
 
 .Webdev__cards-tree {
-    background-color: lightpink;
+    background-color: #c9c9d4;
+}
+
+.Webdev__cards-four {
+    background-color: #d0cbfb;
+}
+
+.Webdev__cards-five {
+    background-color: #d7e7f1;
+}
+
+.Webdev__cards-six {
+    background-color: #d1d1db;
 }
 
 .Webdev__cards {
@@ -105,7 +120,7 @@ ul {
 }
 
 .Webdev__title-part-title p {
-    font-family: 'HeroR';
+    font-family: "HeroR";
     font-size: 13px;
 }
 
@@ -122,7 +137,7 @@ ul {
 }
 
 .Webdev__subtitle-part-list ul li {
-    font-family: 'Proxima';
+    font-family: "Proxima";
     letter-spacing: 0.4px;
     list-style-type: disc;
     font-size: 15px;
@@ -148,10 +163,9 @@ ul {
     position: relative;
 }
 
-
 .Webdev__subtitle-part-price-discount::after {
     position: absolute;
-    content: '-50%';
+    content: "-50%";
     top: 0;
     right: 0;
     border-radius: 50px;
@@ -161,14 +175,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Proxima';
+    font-family: "Proxima";
     font-size: 14px;
 }
 
 .Webdev__subtitle-part-price-discount p {
     padding: 0;
     margin: 0;
-    font-family: 'Proxima';
+    font-family: "Proxima";
 }
 
 .Webdev__subtitle-part-price-discount p span {
@@ -184,7 +198,7 @@ ul {
 }
 
 .Webdev__subtitle-part-price-permonth h1 {
-    font-family: 'Patsy';
+    font-family: "Patsy";
     font-size: 40px;
     width: 67px;
     height: 45px;
@@ -193,7 +207,7 @@ ul {
 }
 
 .Webdev__subtitle-part-price-permonth h4 {
-    font-family: 'Proxima';
+    font-family: "Proxima";
     width: 67px;
     height: 45px;
     padding: 0;
@@ -203,7 +217,7 @@ ul {
 .Webdev__subtitle-part-price-payment p {
     margin: 0;
     font-size: 14px;
-    font-family: 'Proxima';
+    font-family: "Proxima";
 }
 
 .Webdev__subtitle-part-button {
@@ -214,9 +228,9 @@ ul {
 }
 
 .Webdev__subtitle-part-button button {
-    /* font-family: 'Giger'; */
+    display: block;
     position: relative;
-    background-color: rgb(30, 0, 255);
+    background-color: slateblue;
     letter-spacing: 1.5px;
     padding: 15px 0;
     width: 50%;
@@ -224,31 +238,28 @@ ul {
     outline: none;
     border: none;
     border-radius: 10px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .Webdev__subtitle-part-button button span {
     color: white;
-    z-index: 10;
+    z-index: 2;
+    position: relative;
 }
 
 .Webdev__subtitle-part-button button::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     left: 0;
     top: 0;
     height: 45px;
     width: 0px;
-    background-color: white;
-    transition: .3s;
+    background-color: lightcoral;
+    transition: 0.3s;
     border-radius: 10px;
 }
 
 .Webdev__subtitle-part-button button:hover::after {
     width: 210px;
-}
-
-.Webdev__subtitle-part-button button:hover {
-    color: black;
 }
