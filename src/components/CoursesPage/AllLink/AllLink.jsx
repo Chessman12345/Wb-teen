@@ -1,11 +1,14 @@
-import React from "react";
+import { useState } from "react";
 import ReactIcon from "../../../../img/ReactIcon.png";
 import FrontendIcom from "../../../../img/FrontEnd.png";
 import TildaIMage from "../../../../img/Tilda.png";
 import WebDesignFigmaImage from "../../../../img/WebDesign.png";
+import CoursesModalWindow from "../CoursesModalWindow/CoursesModalWindow";
 import "./AllLink.css";
 
 const AllLink = () => {
+  const [activeModal, setActiveModal] = useState(false);
+
   const dataone = [
     {
       id: 1,
@@ -62,6 +65,26 @@ const AllLink = () => {
     },
   ];
 
+  const dataModalWindow = {
+    titleone: "Привет Свет",
+    titletwo: "Привет Планета",
+  };
+
+  let ModalWindowTitle = document.querySelector(".ModalWindow__title");
+
+  const StandModalWindow = (e) => {
+    const targetID = e.target.id;
+    switch (targetID) {
+      case "WebDev":
+        ModalWindowTitle.innerHTML = dataModalWindow.titleone;
+        break;
+      case "WebDes":
+        ModalWindowTitle.innerHTML = dataModalWindow.titletwo;
+        break;
+    }
+    return setActiveModal(true);
+  };
+
   return (
     <>
       <div className="AllLink">
@@ -114,7 +137,11 @@ const AllLink = () => {
                           </div>
                         </div>
                         <div className="AllLink__subtitle-part-button">
-                          <button>
+                          <button
+                            onClick={StandModalWindow}
+                            id="WebDev"
+                            className="AllLink__subtitle-button"
+                          >
                             <span>Записаться</span>
                           </button>
                         </div>
@@ -167,7 +194,11 @@ const AllLink = () => {
                             </div>
                           </div>
                           <div className="AllLink__subtitle-part-button">
-                            <button>
+                            <button
+                              onClick={StandModalWindow}
+                              id="WebDes"
+                              className="AllLink__subtitle-button"
+                            >
                               <span className="button__span">Записаться</span>
                             </button>
                           </div>
@@ -180,6 +211,10 @@ const AllLink = () => {
             </div>
           </div>
         </div>
+        <CoursesModalWindow
+          activeModal={activeModal}
+          setActiveModal={setActiveModal}
+        />
       </div>
     </>
   );

@@ -1,0 +1,28 @@
+{
+  "AllLinkCoursesCardsWebDev": [
+    {
+      "id": 0,
+      "title": "Курс",
+      "subtitle": "Frontend Developer",
+      "image": "../../../img/FrontEnd.png",
+      "textListOne": "Помощь в трудоустройстве",
+      "textListTwo": "Длительность курса 12 месяцев",
+      "class": "AllLink__cards AllLink__cards-one",
+      "price": "1680",
+      "discount": "3360",
+      "permonth": "140"
+    },
+    {
+      "id": 1,
+      "title": "Курс",
+      "subtitle": "Frontend React Developer",
+      "image": "../../../img/ReactIcon.png",
+      "textListOne": "Помощь в трудоустройстве",
+      "textListTwo": "Длительность курса 16 месяцев",
+      "class": "AllLink__cards AllLink__cards-two",
+      "price": "1800",
+      "discount": "3600",
+      "permonth": "150"
+    }
+  ]
+}

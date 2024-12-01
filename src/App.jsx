@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./components/PathPage/HomePage/HomePage";
 import AboutPage from "./components/PathPage/AboutPage/AboutPage";
@@ -20,6 +20,8 @@ import Nav from "./components/Nav/Nav";
 import "./App.css";
 
 function App() {
+  // React.useEffect(() => {}, []);
+
   return (
     <>
       <Routes>
