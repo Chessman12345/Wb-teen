@@ -24,5 +24,31 @@
       "discount": "3600",
       "permonth": "150"
     }
+  ],
+  "AllLinkCoursesCardsWebDes": [
+    {
+      "id": 0,
+      "title": "Курс",
+      "subtitle": "Figma Design",
+      "image": "../../../img/WebDesign.png",
+      "textListOne": "Помощь в трудоустройстве",
+      "textListTwo": "Длительность курса 4 месяцев",
+      "class": "AllLink__cards AllLink__cards-tree",
+      "price": "460",
+      "discount": "920",
+      "permonth": "115"
+    },
+    {
+      "id": 1,
+      "title": "Курс",
+      "subtitle": "Tilda Design",
+      "image": "../../../img/Tilda.png",
+      "textListOne": "Помощь в трудоустройстве",
+      "textListTwo": "Длительность курса 9 месяцев",
+      "class": "AllLink__cards AllLink__cards-four",
+      "price": "972",
+      "discount": "1944",
+      "permonth": "108"
+    }
   ]
 }

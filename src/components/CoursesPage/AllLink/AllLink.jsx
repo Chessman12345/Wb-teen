@@ -1,90 +1,9 @@
 import { useState } from "react";
-import ReactIcon from "../../../../img/ReactIcon.png";
-import FrontendIcom from "../../../../img/FrontEnd.png";
-import TildaIMage from "../../../../img/Tilda.png";
-import WebDesignFigmaImage from "../../../../img/WebDesign.png";
 import CoursesModalWindow from "../CoursesModalWindow/CoursesModalWindow";
 import "./AllLink.css";
 
-const AllLink = () => {
+const AllLink = ({ allCoursesCardsWebDev, allCoursesCardsWebDes }) => {
   const [activeModal, setActiveModal] = useState(false);
-
-  const dataone = [
-    {
-      id: 1,
-      title: "Курс",
-      subtitle: "Frontend Developer",
-      image: FrontendIcom,
-      textListOne: "Помощь в трудоустройстве",
-      textListTwo: "Длительность курса 12 месяцев",
-      buttonTextOne: "",
-      buttonTextTwo: "",
-      class: "AllLink__cards AllLink__cards-one",
-      price: "1680",
-      discount: "3360",
-      permonth: "140",
-    },
-    {
-      id: 2,
-      title: "Курс",
-      subtitle: "Frontend React Developer",
-      image: ReactIcon,
-      textListOne: "Помощь в трудоустройстве",
-      textListTwo: "Длительность курса 16 месяцев",
-      class: "AllLink__cards AllLink__cards-two",
-      price: "1800",
-      discount: "3600",
-      permonth: "150",
-    },
-  ];
-
-  const datatwo = [
-    {
-      id: 1,
-      title: "Курс",
-      subtitle: "Figma Design",
-      image: WebDesignFigmaImage,
-      textListOne: "Помощь в трудоустройстве",
-      textListTwo: "Длительность курса 4 месяцев",
-      class: "AllLink__cards AllLink__cards-tree",
-      price: "460",
-      discount: "920",
-      permonth: "115",
-    },
-    {
-      id: 2,
-      title: "Курс",
-      subtitle: "Tilda Design",
-      image: TildaIMage,
-      textListOne: "Помощь в трудоустройстве",
-      textListTwo: "Длительность курса 9 месяцев",
-      class: "AllLink__cards AllLink__cards-four",
-      price: "972",
-      discount: "1944",
-      permonth: "108",
-    },
-  ];
-
-  const dataModalWindow = {
-    titleone: "Привет Свет",
-    titletwo: "Привет Планета",
-  };
-
-  let ModalWindowTitle = document.querySelector(".ModalWindow__title");
-
-  const StandModalWindow = (e) => {
-    const targetID = e.target.id;
-    switch (targetID) {
-      case "WebDev":
-        ModalWindowTitle.innerHTML = dataModalWindow.titleone;
-        break;
-      case "WebDes":
-        ModalWindowTitle.innerHTML = dataModalWindow.titletwo;
-        break;
-    }
-    return setActiveModal(true);
-  };
-
   return (
     <>
       <div className="AllLink">
@@ -99,7 +18,7 @@ const AllLink = () => {
                   <h1>Веб-разработка</h1>
                 </div>
                 <div className="AllLink__cards-wrapper">
-                  {dataone.map((item, index) => (
+                  {allCoursesCardsWebDev.map((item, index) => (
                     <div key={index} className={item.class}>
                       <div className="AllLink__title-part">
                         <div className="AllLink__title-part-text">
@@ -138,8 +57,8 @@ const AllLink = () => {
                         </div>
                         <div className="AllLink__subtitle-part-button">
                           <button
-                            onClick={StandModalWindow}
                             id="WebDev"
+                            onClick={() => setActiveModal(true)}
                             className="AllLink__subtitle-button"
                           >
                             <span>Записаться</span>
@@ -156,7 +75,7 @@ const AllLink = () => {
                     <h1>Веб-дизайн</h1>
                   </div>
                   <div className="AllLink__cards-wrapper">
-                    {datatwo.map((item, index) => (
+                    {allCoursesCardsWebDes.map((item, index) => (
                       <div key={index} className={item.class}>
                         <div className="AllLink__title-part">
                           <div className="AllLink__title-part-text">
@@ -195,7 +114,7 @@ const AllLink = () => {
                           </div>
                           <div className="AllLink__subtitle-part-button">
                             <button
-                              onClick={StandModalWindow}
+                              onClick={() => setActiveModal(true)}
                               id="WebDes"
                               className="AllLink__subtitle-button"
                             >

@@ -20,7 +20,17 @@ import Nav from "./components/Nav/Nav";
 import "./App.css";
 
 function App() {
-  // React.useEffect(() => {}, []);
+  const [allCoursesCardsWebDev, setAllCoursesCardsWebDev] = React.useState([]);
+  const [allCoursesCardsWebDes, setAllCoursesCardsWebDes] = React.useState([]);
+
+  React.useEffect(() => {
+    fetch("http://localhost:5173/db.json")
+      .then((resp) => resp.json())
+      .then((json) => {
+        setAllCoursesCardsWebDev(json.AllLinkCoursesCardsWebDev);
+        setAllCoursesCardsWebDes(json.AllLinkCoursesCardsWebDes);
+      });
+  }, []);
 
   return (
     <>
@@ -52,7 +62,15 @@ function App() {
           </Route>
           <Route path="/" element={<CoursesPage />}>
             <Route index element={<CoursesPage />} />
-            <Route path="Courses" element={<AllLinkCoursesPage />} />
+            <Route
+              path="Courses"
+              element={
+                <AllLinkCoursesPage
+                  allCoursesCardsWebDev={allCoursesCardsWebDev}
+                  allCoursesCardsWebDes={allCoursesCardsWebDes}
+                />
+              }
+            />
             <Route
               path="Courses/WebDevelopment"
               element={<WebDevCoursesPage />}
